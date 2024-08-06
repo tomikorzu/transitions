@@ -1,0 +1,43 @@
+/* CLIPPY */
+
+
+body{
+    margin: 0;
+    
+}
+
+.button-container{
+    background-color: #333;
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: circle(3% at 96% 7%);
+    transition-property: clip-path;
+    transition-delay: 0s;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    z-index: -1;
+}
+.click-conteinter{
+    margin: auto;
+    transform: translateY(100%);
+    width: 300px;
+    height: 300px;
+    background-color: #333;
+    z-index: 99;
+}
+.click-conteinter:checked ~ .button-container{
+    clip-path: circle(141.4% at 100% 0);
+}
+
+@keyframes toggle{
+    to{
+        
+
+    }
+}

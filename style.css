@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #111;
+}
+main {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.box {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  border: 5px solid #fff;
+}
+.box1 {
+}
+h1{
+    opacity: 1;
+    animation: changePosition 6s forwards alternate-reverse;
+    color: #fff;
+    transition: all 5s ease-in-out;
+}
+
+/* transiciones */
+
+.box1:hover {
+}
+
+.box2 {
+  /* animation: changePosition 7s infinite;
+    width: 300px; */
+}
+
+@keyframes change-color {
+  from {
+    transform: translateX(1000%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes changeWidth {
+  0% {
+    background-color: orange;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: yellowgreen;
+  }
+  75% {
+    background-color: green;
+  }
+  to {
+    width: 100%;
+    background-color: blue;
+  }
+}
+@keyframes changePosition {
+  to {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+}
